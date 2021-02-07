@@ -1,6 +1,5 @@
 //required dependencies
 const mongoose = require("mongoose");
-const mongoose = require("mongoose");
 //setting a constant in global memory for mongoose schema
 const Schema = mongoose.Schema;
 //setting a constant in global memeory for new schema that defines excerises
