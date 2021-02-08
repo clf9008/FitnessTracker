@@ -6,7 +6,7 @@ A fitness tracker application that allows the user to create, add to and post ne
 
 ## Demo
 
-<img src="/DemoImgs/FitnessTrackerp17.gif?raw=true">
+<img src="/imgs/FitnessTracker.gif">
 
 ## Table of Contents
 

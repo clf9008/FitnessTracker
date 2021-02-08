@@ -1,4 +1,4 @@
-//require workout.js upon loading of ap
+//exporting object containing all our models
 module.exports = {
     Workout: require("./Workout"),
   };
