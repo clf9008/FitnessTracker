@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || ;
 
 const app = express();
 
@@ -16,17 +16,17 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://localhost/workout',
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false
-    }
-  );
+     process.env.MONGODB_URI || 'mongodb://localhost/stormy-caverns-80511',
+     {
+       useNewUrlParser: true,
+       useUnifiedTopology: true,
+       useCreateIndex: true,
+       useFindAndModify: false
+     }
+   );
 
 require("./routes/api-routes.js")(app);
-
+ 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname + "/public/index.html"));
 });
