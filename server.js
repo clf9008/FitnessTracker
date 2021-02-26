@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 
 
-const PORT = process.env.PORT || ;
+const PORT = process.env.PORT || 3002;
 
 const app = express();
 
@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-     process.env.MONGODB_URI || 'mongodb://localhost/clf9008fitnesstracker',
+     process.env.MONGODB_URI || 'mongodb://localhost/',
      {
        useNewUrlParser: true,
        useUnifiedTopology: true,
