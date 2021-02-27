@@ -8,7 +8,7 @@ module.exports = function (app) {
         console.log("Checking if db is populated");
         if (res.length === 0) {
             console.log("DB is empty");
-            require("./seeders/seed.js");
+            require("../seeders/seed.js");
         }
     });
 
